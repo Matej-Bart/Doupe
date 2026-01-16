@@ -369,7 +369,9 @@ audio::-webkit-media-controls-panel { background-color: gray;}
     h1 {
         font-size: 1.5rem;
     }
-    
+    .main{
+        width: 100%;
+    }
     .main p {
         font-size: 0.9rem;
         padding: 0 10px;
