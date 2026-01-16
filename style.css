@@ -1,0 +1,414 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-top: 60px;
+    background-color: #0d0d0d;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 1px, transparent 1px),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.2) 1px, transparent 1px),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.25) 1px, transparent 1px); 
+    background-size: 120px 120px;
+}
+/*navbar*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background: linear-gradient(90deg, #6b005c, #3e0736);
+    z-index: 1000;
+}
+.nav-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    padding-left:20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    position: relative;
+    padding: 8px 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+/*main page*/
+h1{
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main p{
+    font-size: small;
+}
+#Doupe-main{
+    width: 500px;
+    border-radius: 10px;
+}
+/*alba a singly*/
+.albums {
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.albums h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.albums-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.album {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.album:hover {
+    transform: translateY(-10px);
+}
+
+.album img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.album h3 {
+    margin: 10px 0 5px;
+}
+
+.album p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.album-link {
+    text-decoration: none; 
+    color: inherit;    
+}
+/*controls u zvuku změna barvy*/
+audio::-webkit-media-controls-panel { background-color: gray;}
+
+/*Informace (o nas)*/
+.info{
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+.info h2{
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+.info-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.info-container h3 {
+   font-size: 1.8rem;
+   margin-bottom:-10px;
+}
+.bubble{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    transition: all 1s;
+}
+.bubble:hover {
+    transform: translateY(-20px);
+}   
+.bubble img{
+    height: 300px;
+    border-radius: 15px;
+    margin: 20px;
+}
+.bubble p{
+    font-size: 1.3rem;
+    line-height: 40px;
+    margin: 50px;
+}
+/* Kontakt stránka */
+.contact-section {
+    padding: 80px 20px;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.social-media, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media:hover, .contact-form:hover {
+    transform: translateY(-5px);
+}
+
+.social-media h3, .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Sociální sítě */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    width: 30px;
+}
+
+.social-link.spotify {
+    background: linear-gradient(45deg, #1DB954, #1ed760);
+}
+
+.social-link.youtube {
+    background: linear-gradient(45deg, #FF0000, #FF3333);
+}
+
+.social-link.instagram {
+    background: linear-gradient(45deg, #E4405F, #F77737);
+}
+
+.social-link:hover {
+    transform: translateX(10px);
+}
+
+/* Formulář */
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form-group p {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #6b005c, #3e0736);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(45deg, #7a0069, #4d0844);
+    transform: translateY(-3px);
+}
+/* Tablet styl (768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        height: auto;
+        min-height: 60px;
+        flex-direction: column;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .nav-links a {
+        padding: 6px 10px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .albums h2, .info h2 {
+        font-size: 1.5rem;
+    }
+    
+    .albums-container {
+        gap: 20px;
+    }
+    
+    .album {
+        max-width: 280px;
+    }
+    
+    .bubble {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .bubble img {
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    
+    .bubble p {
+        font-size: 1.1rem;
+        line-height: 30px;
+        margin: 20px;
+    }
+    
+    .info-container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Mobil styl (480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding-top: 100px;
+    }
+    
+    nav {
+        padding: 10px;
+    }
+    
+    .nav-logo {
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        gap: 5px;
+        font-size: 0.75rem;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        padding: 5px 8px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .main p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+    .albums, .info {
+        padding: 40px 10px;
+    }
+    
+    .albums h2, .info h2 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .albums-container {
+        gap: 15px;
+    }
+    
+    .album {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .album h3 {
+        font-size: 1.1rem;
+    }
+    
+    .bubble {
+        width: 95%;
+        padding: 15px;
+    }
+    
+    .bubble p {
+        font-size: 1rem;
+        line-height: 25px;
+        margin: 15px;
+    }
+    
+    .info-container h3 {
+        font-size: 1.2rem;
+    }
+}
