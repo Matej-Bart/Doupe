@@ -1,0 +1,21 @@
+{
+  "name": "Doupě",
+  "short_name": "Doupě",
+  "description": "Jednoduchy web pro Doupě",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "rgba(255, 255, 255, 0.15)",
+  "icons": [
+    {
+      "src": "Icon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Icon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

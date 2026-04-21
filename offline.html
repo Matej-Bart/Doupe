@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline – DOUPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="./obrazky/doupe_sticker.png">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">DOUPE</div>
+        <div class="nav-links">
+            <a href="index.html">Domů</a>
+            <a href="Alba.html">Alba</a>
+            <a href="Singly.html">Singly a EP</a>
+            <a href="Onas.html">O nás</a>
+            <a href="Kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <div class="offline-wrapper">
+        <svg class="offline-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#6b005c" stroke-width="4"/>
+            <line x1="20" y1="20" x2="80" y2="80" stroke="#6b005c" stroke-width="5" stroke-linecap="round"/>
+            <path d="M20 42 Q35 28 50 28 Q65 28 75 38" fill="none" stroke="#555" stroke-width="4.5" stroke-linecap="round"/>
+            <path d="M30 55 Q40 44 50 43 Q60 44 65 50" fill="none" stroke="#555" stroke-width="4.5" stroke-linecap="round"/>
+            <circle cx="50" cy="66" r="5" fill="#555"/>
+        </svg>
+
+        <div class="offline-card">
+            <h1>Jsi offline</h1>
+            <p>Zdá se, že momentálně nemáš připojení k internetu. Zkontroluj své připojení a zkus to znovu.</p>
+            <a href="/" class="retry-btn" onclick="window.location.reload(); return false;">Zkusit znovu</a>
+        </div>
+        <p class="offline-note">DOUPE &copy; 2025</p>
+    </div>
+</body>
+</html>
